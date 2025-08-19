@@ -10,7 +10,7 @@ jobs:
         node_version: ['18.x', '20.x']
     steps:
     - name: count-lines
-      run: wc -l ./actions.js > /tmp/linesofcode.txt
+      run: wc -l actions.js > /tmp/linesofcode.txt
 
   send-mail:
     runs-on: ubuntu-latest
